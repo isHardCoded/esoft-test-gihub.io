@@ -24,7 +24,7 @@ function copyObject(object, visited = new WeakMap()){
 
     if (object instanceof Map) {
         object.forEach((value, key) => {
-            clone.set(key, deepCopy(value, visited));
+            clone.set(key, copyObject(value, visited));
         });
     }
     else if (object instanceof Set) {

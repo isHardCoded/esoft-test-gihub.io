@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.main {
+    width: 500px;
+    height: 350px;
+
+    background-color: burlywood;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.window {
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+    background-color: rgb(197, 217, 255);
+}
+
+.roof {
+    width: 500px;
+    height: 170px;
+
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+    border-bottom: 150px solid #8a5c37;
+
+    position: relative;
+}
+
+.duct {
+    width: 75px;
+    height: 100px;
+
+    background-color: rgb(151, 121, 81);
+    position: absolute;
+
+    left: 90px;
+    top: 20px;
+
+    z-index: -1;
+}
